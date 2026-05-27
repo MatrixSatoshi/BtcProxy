@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: btc-proxy
+    env: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: BG_TOKEN
+        value: lBcKKHCEx1
+      - key: PORT
+        value: 3000
